@@ -1,13 +1,30 @@
 ## Fun Facts API
 
 ### About
-
 Tells a different fun fact every day. Written in hexagonal architecture.
 
 ### Endpoints
-
-- `/v1/fun-facts/today` returns today's fun fact.
-- `/v1/fun-facts/recent` returns last 10 days' fun facts.
+`/v1/fun-facts/today` returns today's fun fact.
+```
+{
+    "date": "2025-09-28",
+    "fact": "The Eiffel Tower can be seen from as far as 42 miles away on a clear day!"
+}
+```
+`/v1/fun-facts/recent` returns last 10 days' fun facts.
+```
+[
+    {
+        "date": "2025-09-28",
+        "fact": "The Eiffel Tower can be seen from as far as 42 miles away on a clear day!"
+    },
+    {
+        "date": "2025-09-27",
+        "fact": "Whales were once land animals but returned to the sea around 50 million years ago."
+    },
+    ...
+]
+```
 
 ### Running locally
 1. Add `MISTRAL_API_KEY` to `.env`
