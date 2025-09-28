@@ -1,7 +1,9 @@
 ## Fun Facts API
 
 ### About
-Tells a different fun fact every day. Written in hexagonal architecture.
+Tells a different fun fact every day. Written in hexagonal architecture. I deployed it so that you can try it out via:
+- API: https://fun-facts-api-production.up.railway.app/v1/fun-facts/today
+- Website: [https://mucansever.github.io/fun-facts](https://mucansever.github.io/#/v1/fun-facts/today)
 
 ### Endpoints
 `/v1/fun-facts/today` returns today's fun fact.
